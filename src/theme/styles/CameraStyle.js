@@ -1,0 +1,115 @@
+import { Dimensions, } from 'react-native';
+
+const CameraStyles = {
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  preview: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    height: Dimensions.get('window').height,
+    width: Dimensions.get('window').width,
+  },
+  capture: {
+    flex: 0,
+    backgroundColor: '#CFF',
+    borderRadius: 5,
+    color: '#000',
+    padding: 15,
+    margin: 15,
+    borderColor: '#006',
+    borderWidth: 5,
+  },
+  overlay: {
+    position: 'absolute',
+    padding: 16,
+    right: 0,
+    left: 0,
+    alignItems: 'center',
+  },
+  overlayMiddle: {
+    position: 'absolute',
+    right: 0,
+    left: 0,
+    alignItems: 'center',
+  },
+  topOverlay: {
+    top: 0,
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  bottomOverlay: {
+    bottom: 0,
+    // backgroundColor: 'rgba(0,0,0,0.4)',
+    flexDirection: 'row',
+    // justifyContent: 'center',
+    alignItems: 'center',
+  },
+  middleOverlay: {
+    position: 'absolute',
+    right: 0,
+    left: 0,
+    top: 280,
+    height: 105,
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  captureButton: {
+    padding: 15,
+    backgroundColor: 'white',
+    borderRadius: 40,
+    alignSelf: 'center',
+  },
+  backButton: {
+    // float: 'left',
+    width: 36,
+    height: 36,
+    padding: 15,
+    // alignSelf: 'flex-start',
+    // backgroundColor: 'white',
+  },
+  typeButton: {
+    padding: 5,
+  },
+  flashButton: {
+    padding: 5,
+  },
+  buttonsSpace: {
+    width: 10,
+  },
+  button: {
+    color: 'black',
+    height: 80,
+    padding: 10,
+    textAlign: 'center',
+    borderColor: 'black',
+    borderWidth: 3,
+    marginLeft: 10,
+    marginRight: 10,
+  },
+  now_mode: {
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    color: 'black',
+    height: 40,
+    padding: 10,
+    textAlign: 'center',
+    borderColor: 'black',
+    borderWidth: 3,
+  },
+  footer: {
+    bottom: 0,
+    flexDirection: 'row',
+    // justifyContent: 'center',
+    alignItems: 'flex-start',
+  },
+};
+
+export default CameraStyles;
